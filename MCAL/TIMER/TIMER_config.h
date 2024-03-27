@@ -1,0 +1,40 @@
+/*
+ * TIMER_config.h
+ *
+ * Created: 16/03/2024 11:04:21 am
+ *  Author: Ismail
+ */ 
+
+
+#ifndef TIMER_CONFIG_H_
+#define TIMER_CONFIG_H_
+
+
+#define TMR0_PRELOAD_VAL	0
+#define TMR0_OVF_COUNTER	1
+
+#define TMR0_COMPARE_VAL	249
+#define TMR0_CTC_COUNTER	1500
+
+
+#define TMR1_PRELOAD_VAL	0
+#define TMR1_OVF_COUNTER	6
+
+#define TMR1_COMPARE_VAL	62499
+#define TMR1_CTC_COUNTER	6
+
+#define TMR2_PRELOAD_VAL	0
+#define TMR2_OVF_COUNTER	6
+
+#define TMR2_COMPARE_VAL	249
+#define TMR2_CTC_COUNTER	1500
+
+/*Options for TimerX Mode:
+	TMRX_OVF_MODE
+	TMRX_CTC_MODE
+*/
+#define TMR0_MODE		TMR0_OVF_MODE	
+#define TMR1_MODE		TMR1_CTC_MODE
+#define TMR2_MODE		TMR2_CTC_MODE
+
+#endif /* TIMER_CONFIG_H_ */
